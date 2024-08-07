@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Youtube auto-pause",
+  "version": "0.0.1",
+  "description": "Automatically pauses youtube videos when you leave the tab with automatic resume and respecting manual pausing",
+  "background": {
+    "scripts": ["browser-polyfill.js", "background.js"]
+  },
+  "host_permissions": ["<all_urls>"],
+  "permissions": ["tabs", "scripting", "storage"],
+  "options_ui": {
+    "page": "options.html"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{42da92b8-1a85-4dfb-bbe3-08e6e7b82b3f}"
+    }
+  }
+}
